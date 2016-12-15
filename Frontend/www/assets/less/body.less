@@ -1,0 +1,122 @@
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #fff7e6;    
+}
+
+.main-container container-fluid{  
+    padding-left: 30px;
+    padding-right: 355px;
+    min-width: 650px;
+    height: 100%;
+    width: 100%;
+}
+
+.left-panel{
+    //width: 100%;
+    max-width: 1000px;
+    padding-top: 85px;
+    padding-left: 17px;
+    padding-right: 17px;
+    
+    .page-title{
+    text-align: center;       
+    }
+    
+.all-pizza-type-wrap{
+    margin-bottom: 10px;
+    text-align: center; 
+    ul{
+         display: inline-block;
+        
+    }
+}
+    
+    .all-pizza-type{ 
+            .active{
+                a{
+                background-color: darken(@mainColor,8%);
+            }
+                a:hover{
+                background-color: darken(@mainColor,8%);
+            }
+        }
+         a{
+                color: darken(@mainColor,8%);
+            }
+        a:hover{
+                 background-color: lighten(@mainColor,35%);
+            }
+    }
+ 
+    } 
+
+.badge{
+        background-color: @mainColor;
+    }
+
+.footer{
+        height: 120px;
+        border-top: 1px solid #e6e6e6;
+        color: #404040;
+        text-align: center;
+        background-color: white;
+        font-size: 12px;
+        padding-right: 350px;
+        padding-top: 50px;
+    }
+.discount-panel {
+    position: fixed;
+    bottom: 0;
+    left: 5px;
+    width: 100px;
+    height: 120px;
+    background-color: @mainColor;
+    margin-left: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    z-index: 70;
+    
+    
+    img {
+        position: absolute;
+        top: -11px; 
+    }
+   
+    .discount-title {   
+        padding-top: 10px;
+        padding-bottom: 8px;  
+        text-align: center; 
+        margin-left: 10px;
+        margin-right: 10px;
+        border-bottom: 2px dotted darken(@mainColor, 15%);       
+    }
+   
+    .discount-text {
+        padding-top: 10px;
+        padding-bottom: 8px;
+        text-align: center;            
+    }
+}
+.badgeNew{
+    position: absolute;
+    left: 290px;
+    z-index: 70;
+    font-weight: bolder;
+    color:white;
+    font-size: 18px;
+}
+.imprezza{
+    position:relative;
+}
+.bbq{
+    position: relative;
+}
+.badgePopular{
+    position: absolute;
+    left: 580px;
+    z-index: 60;
+    color:white;
+    font-weight: bolder;
+    font-size: 18px;
+}
