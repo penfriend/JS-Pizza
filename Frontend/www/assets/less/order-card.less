@@ -3,7 +3,23 @@
 @minusBorderColor:#b20101;
 @plusBorderColor: #1b9838;
 @delBorderColor:#b3b3b3;
-
+.order row{
+    z-index: 1; 
+    display:none;
+}
+.order-item{
+    margin-top: 80px;
+    .order-item-img-image {
+        height: 50px;
+    }
+    background-color: white;
+}
+.order-button-btn{
+  position:fixed;
+    left: 1100px;
+    top: 600px;
+    z-index: 100; 
+}
 .order{
     width: @widthOrderBlock;
     height: 100%;
@@ -16,6 +32,12 @@
     padding-top: 90px;
     box-shadow: -6px 90px 20px -6px #b1b1b1;
     overflow: scroll;
+    .order-items{
+       z-index: 10; 
+    }
+    .order-button{
+        z-index: 10; 
+    }
 }
 
 .top-order{
@@ -68,7 +90,7 @@
     padding-top: 30px;
 }
 
-.bottom-order-buy{ 
+.order-sum{ 
         height: 135px;
         width: @widthOrderBlock;  
         background-color: white;
@@ -79,7 +101,7 @@
         font-weight: bold;
         color: black;
         
-        .heading{
+        .order-total-lable{
         display: inline-block;
         font-size: 16px;
         margin-bottom: 15px;
@@ -87,7 +109,7 @@
         margin-left: 15px;  
         }
         
-        .sum{
+        .order-total-sum-value{
         display: inline-block;
         font-size: 22px;
         margin-bottom: 15px;

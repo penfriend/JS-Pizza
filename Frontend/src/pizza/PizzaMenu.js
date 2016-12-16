@@ -31,25 +31,25 @@ function showPizzaList(list) {
     list.forEach(showOnePizza);
 }
 
-function filterPizza(filter) {
-    //Масив куди потраплять піци які треба показати
-    var pizza_shown = [];
-
-    Pizza_List.forEach(function(pizza){
-        //Якщо піка відповідає фільтру
-        //pizza_shown.push(pizza);
-
-        //TODO: зробити фільтри
-    });
-
-    //Показати відфільтровані піци
-    showPizzaList(pizza_shown);
-}
+//function filterPizza(filter) {
+//    //Масив куди потраплять піци які треба показати
+//    var pizza_shown = [];
+//
+//    Pizza_List.forEach(function(pizza){
+//        //Якщо піка відповідає фільтру
+//        //pizza_shown.push(pizza);
+//
+//        //TODO: зробити фільтри
+//    });
+//
+//    //Показати відфільтровані піци
+//    showPizzaList(pizza_shown);
+//}
 
 function initialiseMenu() {
     //Показуємо усі піци
-    showPizzaList(Pizza_List)
+    showPizzaList(Pizza_List.list);
 }
 
-exports.filterPizza = filterPizza;
+//exports.filterPizza = filterPizza;
 exports.initialiseMenu = initialiseMenu;

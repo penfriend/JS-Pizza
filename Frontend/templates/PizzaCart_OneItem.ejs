@@ -1,9 +1,47 @@
-<div>
-    <%= pizza.title %> (<%= size %>)
-    <div>Ціна: <%= pizza[size].price %> грн.</div>
-    <div>
-        <button class="btn btn-danger minus">-</button>
-        <span class="label label-default"><%= quantity %></span>
-        <button class="btn btn-success plus">+</button>
+<div class="order-item">
+    <img src="<%= pizza.icon %>" class="order-item-img-image " />
+    <div class="order-item-info">
+        <div class="order-item-lable">
+            <div class="order-item-lable-name">
+                <%= pizza.title %>
+            </div>
+            <div class="order-item-lable-size">(
+                <%if(size === 'small_size'){ %>Мала
+                    <% }else{ %>Велика
+                        <% } %>)</div>
+        </div>
+        <div class="order-item-parameters">
+            <div class="order-item-diameter">
+                <img class="order-item-diameter-img" src="assets/images/size-icon.svg" />
+                <span class="order-item-diameter-value"><%= pizza[size].size %></span>
+            </div>
+            <div class="order-item-weight">
+                <img class="order-item-weight-img" src="assets/images/weight.svg" />
+                <span class="order-item-weight-value"><%= pizza[size].weight %></span>
+            </div>
+        </div>
+        <div class="order-item-amount">
+            <div class="order-item-amount-price">
+                <span class="order-item-amount-price-value">
+
+                </span>
+                <span>грн</span>
+            </div>
+            <div class="order-item-amount-change">
+                <div class="order-item-minus-btn glyphicon glyphicon-minus"></div>
+                <div class="order_item_amount_current">
+                    <%= quantity %>
+                </div>
+                <div class="order-item-plus-btn glyphicon glyphicon-plus"></div>
+            </div>
+            <div class="order-item-amount-remove-btn glyphicon glyphicon-remove"></div>
+        </div>
     </div>
+
 </div>
+
+
+
+
+
+
